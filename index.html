@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Bundle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎉 Interactive Demo Site</h1>
+
+  <!-- Event Handling -->
+  <h2>1. Event Handling</h2>
+  <button class="action-btn" id="changeBtn">Click Me!</button>
+  <div class="color-change" id="colorText">I change color on button click!</div>
+  <div id="keyOutput">Press any key...</div>
+
+  <!-- Slideshow -->
+  <h2>2. Image Slideshow</h2>
+  <div class="slideshow">
+    <img src="https://th.bing.com/th/id/OIP.7ONGS79UydCwaiL5h6XrmwHaEc?w=309&h=185&c=7&pcl=292827&r=0&o=7&cb=iwp1&pid=1.7&rm=3" class="active">
+    <img src="https://th.bing.com/th/id/OIGP.UU7M_.pBdCl1lXZqhAjx?w=233&h=233&c=6&pcl=292827&o=7&cb=iwp1&pid=1.7&rm=3">
+    <img src="https://th.bing.com/th/id/OIP.-O0y1UogUYczdxX_FDPiEwHaE8?w=264&h=180&c=7&pcl=292827&r=0&o=7&cb=iwp1&pid=1.7&rm=3">
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <div class="tab-buttons">
+      <button onclick="showTab(0)">Tab 1</button>
+      <button onclick="showTab(1)">Tab 2</button>
+    </div>
+    <div class="tab-content active">This is content for Tab 1.</div>
+    <div class="tab-content">This is content for Tab 2.</div>
+  </div>
+
+  <!-- Form -->
+  <h2>3. Form Validation</h2>
+  <form id="signupForm">
+    <input type="text" id="name" placeholder="Enter Name" required>
+    <div class="feedback" id="nameFeedback"></div>
+
+    <input type="email" id="email" placeholder="Enter Email" required>
+    <div class="feedback" id="emailFeedback"></div>
+
+    <input type="password" id="password" placeholder="Password (min 8 chars)" required>
+    <div class="feedback" id="passFeedback"></div>
+
+    <button type="submit" class="action-btn">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
